@@ -1,0 +1,47 @@
+<!--
+    @author ercankertisci
+
+    <header> : sayfa başlığı bölümü
+    <article> : sayfa içeriği bölümü
+    <aside> : yan menü bölümü
+    <footer> : sayfa altı bölümü
+
+    
+    Sıkça Kullanılan Özellikler:
+
+    1. HTML komutları temel olarak bir açılış tagı, bir kapanış tagı ve içerikten oluşur. 
+    
+    ** Her açılış tagı mutlaka kapatılmalıdır. Aksi takdirde komut düzgün çalışmayabilir.
+    ** Açılış ve kapanış tagı içinde kalan içerik bu komuttan etkilenir ve beklenen görevi yerine getirir.
+
+    2.Her HTML tagının kendine göre özellikleri vardır.
+    
+    ** Örneğin; tagların "id" özelliği ile ilgili taga isim
+    verilmesini ve onun diğer taglardan ayırt edilmesini sağlarken "style" özelliği ise tagların görünümünü ve
+    konumunu değiştirir.
+    **Dikkat edilirse özelliğe atanan değer tırnak içinde yazılır. bu bilgiler ışığında, tagların özellikleri de
+    eklenince HTML komutunun yapısı aşağıdaki gibi olur.
+
+    <p özellik= "deger"> İçerik </p>
+
+    Özellikler;
+    html komutlarının bazı niteliklerini belirlemeye ve değiştirmeye yarar. Örneğin <p> tagı
+    paragraf oluşturmak için kullanılır. eğer bu paragrafa belli bir isim verip bu ismi kullanarak 
+    bazı işlemler yapmak istiyorsak id özelliğini kullanabilirsiniz. <p id="bilgi"> .... </p> komutları ile
+    oluşturduğunuz <p> tagına bilgi adını vermiş olursunuz. bu ad/id sayesinde CSS veya Javascript komutlarını
+    kullanarak paragraf ile işlemler yapabilirsiniz.
+
+    Özellik - Alabileceği Değer -       Örnek -                   Açıklama
+
+    id      - benzersiz isim    -     <h1 id="baslik1">..</h1>          - HTML tagına benzersiz isim verip o isimle işlem yapılmasını sağlar.
+    class   - css sınıf adı     -     <h2 class="cerceve">..</h2>        - HTML komutuna belirli bir ada sahip css ayarlarının uygulanmasını ve biçimlendirilmesini sağlar.
+    lang    - dil kodu          -     <h3 lang="fr">...</h3>             - Dil kodunu belirler. farklı dil kodlarını kullanarak farklı dillerde metinler yazabilirsiniz.
+    style   - css komutu        -     <h1 style="color:red">..</h1>        - html komutu içinde css kodu yazılmasını ve ilgili html komutunun biçimlendirilmesini sağlar.
+    title   - metin             -     <h1 title="Makale Basligi">..</h1> - ilgili html komutunun üzerine gidildiğinde bir kutu içinde belirlenen açıklama metinlerinin görünmesini sağlar.
+    tabindex - numara           -    <h1 tabindex="1">..</h1>            - sayfa üzerinde nesnelerin tab tuşu ile aktif edilmesini sağlar. bu özelliğe verilen numaraya göre her tab tuşuna basıldığında bir sonraki numaraya sahip html kodu aktif olur.
+    dir     - rtl ve ltr        -     <p dir="rtl">selam</p>        -  metin yönünün sağdan sola(right to left) veya soldan sağa(left to right) olmasını sağlar.
+    accesskey - klavye tuşları  -     <button accesskey="b">Tıkla</button> - html elemanlarının kısayol atanmasını ve bu kısayolları kullanarak aktif edilmesini sağlar.
+
+
+    
+-->
