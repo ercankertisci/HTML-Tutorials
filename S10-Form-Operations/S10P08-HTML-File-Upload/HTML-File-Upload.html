@@ -1,0 +1,32 @@
+<!--
+    @author ercankertisci
+
+    ** Bazı formlarda kullanıcının makale, özgeçmiş resim veya program kodu gibi bilgileri sunucuya yüklemesini isteyebilirsiniz.
+
+    bu tür durumlarda <input> tagının type="file" özelliğini kullanabilirsiniz.
+
+    Yüklenmek istenen dosyanın doğru formatta olduğundan emin olmak için <form> tagı aşağıdaki gibi olmalıdır.
+
+    <form method="post" enctype="multipart/form-data" action="yukle.aspx">
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="post" enctype="multipart/form-data" action="yukle.php">
+        Dosya Yükle: <input type="file" name="dosya"><br>
+
+        <p>Lütfen en fazla 1MB boyutunda ve DOC ya da PDF formatlı dosyaları gönderiniz.</p>
+    </form>
+</body>
+
+</html>
