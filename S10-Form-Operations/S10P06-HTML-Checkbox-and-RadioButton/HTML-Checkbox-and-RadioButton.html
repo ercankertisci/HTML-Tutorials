@@ -1,0 +1,48 @@
+<!--
+    @author ercankertisci
+
+    ** eğer ziyaretçiden "Evet/Hayır", "Doğru/Yanlış", "Onayla/Onaylama" gibi cevaplar girmesini istiyorsanız checkbox,
+    yani onay kutusu kullanırsınız. Eğer seçenekleri ikiden fazlaya çıkarmak istiyorsanız radio, yani seçenek kutusu kullanırsınız.
+
+   onay kutusu icin:
+   
+   <input type="checkbox" name="bekar" value="bekar" checked="checked">
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Sitemiz hakkındaki fikirleriniz</h1>
+    <input type="checkbox" name="begen" value="evet">Sitenizi begendim<br>
+    <input type="checkbox" name="bilgi" value="evet">Aradigim bilgiyi buldum<br>
+    <input type="checkbox" name="ayrinti" value="evet">Bilgiler ayrintili<br>
+    <input type="checkbox" name="hiz" value="evet">Siteniz hızlı<br>
+
+    <br><br><br>
+    <!--
+        eğer ziyaretçilerin iki veya daha fazla seçenek arasından sadece bir tanesini seçmesini istiyorsanız seçenek kutusu
+        (radio) kullanabilirsiniz. 
+    -->
+
+    <h2>Sitemizin görüntüsü nasıl?</h2>
+    <input type="radio" name="goruntu"> İyi
+    <input type="radio" name="goruntu" checked="checked">Normal
+    <input type="radio" name="goruntu">Kötü <br>
+
+    <h2>Sitemizin hızı nasıl?</h2>
+    <input type="radio" name="goruntu"> İyi
+    <input type="radio" name="goruntu" checked="checked">Normal
+    <input type="radio" name="goruntu">Kötü <br>
+
+</body>
+
+</html>
