@@ -1,0 +1,44 @@
+<!--
+
+    @author ercankertisci
+
+    Linklerin Hedefi
+
+    ** Eğer aksini belirtmezseniz, herhangi bir linke tıkladığınızda, hedef sayfa tarayıcıdaki aktif sekme
+    için de açılır. Yani eski sayfa gider yerine hedef sayfa gelir.
+    
+    ** Fakat bazı durumlarda hem eski sayfanın durması hem de yeni sayfanın açılması istenir.
+    linkleri ayrı bir sekmede açmak için target özelliği kullanılır.
+
+    Örneğin; sitenin iletişim sayfasına gitmek için aşağıdaki link yazılmalıdır.
+
+    <a href="iletisim.html"> iletisim bilgileri </a>
+
+    ** eğer o an bulunduğunuz aktif sayfanın durması, başka bir sekmede de iletişim sayfasının açılmasını
+    istiyorsanız yukarıdaki kodlar aşağıdaki gibi olmalıdır.
+
+    <a href="iletisim.html"> target="_blank">iletisim bilgileri</a>
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, quibusdam!</p>
+    <p>Adrese gitmek için: <br>
+        <a href="http://www.google.com.tr" target="_blank">Google</a>
+    </p>
+</body>
+
+</html>
