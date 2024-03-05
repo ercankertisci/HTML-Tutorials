@@ -1,0 +1,59 @@
+<!--
+    @author ercankertisci
+
+    FORM Olusturma
+
+    ** Form olusturmak icin <form> tagı kullanılır. 
+    
+        - Form'a isim vermek icin; name,
+
+        - Forma girilen verilen hangi sayfaya gönderilecegini belirlemek icin; action
+
+        - Form'daki verilerin hedef sayıya gönderilme yöntemini belirlemek icin; method
+        özellikleri kullanılır.
+            
+            ** formdaki verileri hedef sayfaya iki yöntemle gönderebilirsiniz.
+            ** bu yöntemlerden biri olan get, form verilerini adres çubuğundan görünür şekilde gönderir ve bu verilerin boyutu
+            en fazla 2kb olabilir.
+            ** diğer yöntem olan post ise, verileri gizli olarak gönderir ve herhangi bir boyut kısıtlaması yoktur.
+
+        
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="email" action="mail.php" method="get"></form>
+</body>
+</html>
+
+<!--
+    Yukarıdaki kodu açıklayacak olursak;
+
+    ** formun adı email olarak belirtilmiş.
+    ** formdaki veriler mail.php sayfasına gönderilecek. bu sayfaya gönderilen veriler değişik komutlarla
+    alınıp işlenecek, veritabanına veya bir email adresine gönderilecek. Eğer formdaki verileri belil bir sayfaya değil de
+    herhangi bir email adresine göndermek isterseniz aşağıdaki gibi bir komut kullanabilirsiniz.
+
+        <form action="ercan.kertisci@gmail.com" enctype="text/plain">
+
+    ** formda veri gönderme yöntemi olarak get kullanılmış. Bu da verilerin mail.php sayfasına tarayıcının adres çubuğu üzerinden
+    gönderileceğini belirtir. Böylece, hedef sayfaya gönderilen verileri görme ve test etme şansınız olur.
+    Eğer gönderme yöntemini belirtmezseniz varsayılan post yöntemi kullanılır.
+
+    ** Formda action özelliği kullanılmazsa ve formdaki verilerin hangi sayfaya gönderileceği belirtilmezse veriler aynı
+    sayfada kalır. Bu durumda, formdaki verileri işlemek için gerekli olan PHP veya ASP kodlarını aynı sayfa içine yazmanız gerekir.
+
+    ** Foormdaki verileri HTML komutları ile işleyemezsiniz. Bu verileri okuyup işlem yapmak için mutlaka uygun bir dil kullanmalsınız.
+    Bu diller duruma göre Jasvascript, PHP veya ASP olabilir.
+
+    ** ilgili form elemanları <form> </form> taglarının arasına koyulmalıdır. Aksi takdirde hatralı sonuçlar elde edersiniz.
+    Daha önce de öğrendiğimiz gibi, form içinde metin kutuları, onay ve seçenek kutuları, seçenek listeleri, metin alanları
+    onay ve iptal butonları gibi birçok form bulunabilir.
+-->
