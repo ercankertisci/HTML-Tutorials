@@ -1,0 +1,80 @@
+<!--
+    @author ercankertisci
+
+    ** Onay kutuları Evet/Hayır veya Doğru/Yanlış gibi cevaplar için çok uygundur.
+
+    ** Seçenek kutuları ise birkaç seçenekten birini seçmek için kullanılır. Eğer seçenek sayısı
+    çok fazla ise Seçenek Listesi kullanılır.
+
+    ** 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Dogum Yeri:
+    <select name="il" size="1">
+        <option>İstanbul</option>
+        <option>Ankara</option>
+        <option>İzmir</option>
+        <option>Adana</option>
+    </select>
+
+    <br><br><br>
+
+    <!--
+        Eğer listede birden fazla seçenek görünmesini istiyorsanız size değerini arttırabilirsiniz.
+    -->
+
+    Dogum Yeri:
+    <select name="il" size="3">
+        <option>İstanbul</option>
+        <option>Ankara</option>
+        <option>İzmir</option>
+        <option>Adana</option>
+    </select>
+
+
+
+    <!--
+        Listeler eğer listede tek seçenek görünüyorsa drop-down list, listede birden fazla seçenek görünüyorsa list box adını alır.
+
+        listedeki seçenek sayısı görünen seçenek sayısından daha büyük olursa sağ tarafta bir kaydırma çubuğu görünür ve listede
+
+        dolaşmamızı sağlar.
+    -->
+
+    <br><br><br>
+    <!--
+        Listelerde <optgroup> tagını kullanarak kategori de oluşturabilirsiniz. ÖRneğin; Türkiye'deki illeri bölgelere
+            göre listelemek istiyorsanız aşağıdaki gibi bir kod yazabilirsiniz.
+    -->
+
+    Doğum Yeri:
+    <select name="iller" size="1">
+        <optgroup label="Marmara">
+            <option>İstanbul</option>
+            <option>Edirne</option>
+            <option>Tekirdağ</option>
+        </optgroup>
+        <optgroup label="Ege">
+            <option>İzmir</option>
+            <option>Manisa</option>
+            <option>Aydın</option>
+
+        </optgroup>
+    </select>
+
+
+</body>
+
+</html>
