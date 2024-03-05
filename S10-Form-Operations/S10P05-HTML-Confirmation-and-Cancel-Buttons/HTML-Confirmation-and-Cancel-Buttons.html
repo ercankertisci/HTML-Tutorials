@@ -1,0 +1,62 @@
+<!--
+    @author ercankertisci
+
+    ** form elemanlarina girilen verilerin onaylanması ve bu sayede hedefe gönderilebilmesi için onay butonları kullanılır.
+
+    ** Onay butonuna tıkladığınızda otomatik olarak form elemanlarına girilen veriler action özelliği ile belirtilen sayfaya
+
+    gönderilir. İptal butonuna tıkladığınızda ise form elemanındaki tüm veriler temizlenir.
+
+    Aşağıdaki kodlarda form içinde bulunan Ad,Soyad, Email ve İleti kutularına ek olarak Submit ve Reset butonlarını da görebilirsiniz.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="email" action="mail.php" method="get">
+        Ad:<input type="text" name="ad"><br>
+        Soyad:<input type="text" name="soyad"><br>
+        Email:<input type="email" name="email"><br>
+        İleti:<textarea name="ileti" rows="5" cols="50"></textarea>
+        <br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="İptal">
+    </form>
+
+    <!--
+        Ortak Özellikler:
+
+        value: Form elemanının değerini yani, içindeki veriyi belirtir.
+
+        placeholder: Açıklama metni. İlgili form elemanında bir açıklama metni görünmesini sağlar. Form elemanına tıkladığınızda
+        otomatik olarak kaybolur. 
+
+        name: Form elemanının adı
+
+        id: Form elemanının adı. name özelliği ile hemen hemen aynı işe yarar.
+
+        autofocus: sayfa açıldığında fare imlecinin form elemanını aktif yapmasını sağlar. Genelde formdaki ilk elemana uygulanır.
+        böylece tıklamaya gerek kalmadan doğrudan yazmaya başlayabilirsiniz. Bu özellik genellikle formdaki ilk metin kutusuna koyulur.
+        böylece sayfa açıldığında bu metin kutusu aktif olur ve fare imleci yanıp sönerek metin girmenizi bekler.
+
+        autocomplete: formlara girilen verilen daha önce girilen veriler dikkate alınarak tamamlanmasını sağlar. 
+
+        maxlenght: form elemanına girilebilecek maksimum karakter miktarını belirler.
+
+        required: form elemanın mutlaka doldurması gerektiğini belirtir. Form elemanı boş bırakılırsa hata mesajı alırsınız. 
+
+        disabled: form elemanının pasif hale getirilmesini ve kullanılmamasını sağlar.
+
+    -->
+
+</body>
+
+</html>
