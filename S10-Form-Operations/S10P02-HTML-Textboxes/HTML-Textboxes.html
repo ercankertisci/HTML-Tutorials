@@ -1,0 +1,71 @@
+<!--
+
+    @author ercankertisci
+
+    Metin Kutuları
+
+    ** En çok kullanılan form elemanlarından biri metin kutularıdır. Metin kutuları ziyaretçilerden ad,soyad,adres vb. veriler
+    almak için kullanılabilir. 
+
+    ** Bir metin kutusu oluşturmak için <input> tagı kullanılır. 
+
+    ** Tipik bir metin kutusu için aşağıdaki kodları yazabilirsiniz.
+
+    <input type="text" name="ad" size="30" maxLength="50" required>
+
+    Yukarıdaki komutta görülen özelliklerin anlamları:
+
+    ** type özelliği hangi tipte form elemanı oluşturacağınızı belirler.
+        type="text" yazarak bir metin kutusunun oluşturulmasını sağlayabilirsiniz.
+    
+    ** Metin kutusuna belli bir isim vermek için name özelliği kullanılır.
+
+    ** Metin kutusunun genişliğini belirlemek için size özelliğini, metin kutusuna yazılacak maksimum karakter
+    sayısını belirlemek için ise maxlenght özelliğini kullanabilirsiniz.
+
+    ** Eğer kutunun boş bırakılmasını istemiyorsanız required parametresini yazabilirsiniz.
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="email" action="mail.php" method="get">
+        Ad:<input type="text" name="ad" max="30" required>
+        <br>
+        Soyad:<input type="text" name="soyad" max="30" required>
+    </form>
+
+    <br><br><br><br>
+
+    <!--
+        Eğer metin kutularının hizalı görünmesini istiyorsanız <table> komutunu kullanabilirsiniz.
+    -->
+
+    <form name="email" action="mail.php" method="get">
+        <table>
+            <tr>
+                <td>Ad:</td>
+                <td><input type="text" name="ad" max="30" required></td>
+            </tr>
+            <tr>
+                <td>Soyad:</td>
+                <td><input type="text" name="soyad" max="30" required></td>
+
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
