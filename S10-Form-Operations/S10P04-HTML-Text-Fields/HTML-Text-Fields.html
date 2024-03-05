@@ -1,0 +1,35 @@
+<!--
+    @author ercankertisci
+
+    ** Metin kutuları tek satırlık veri girilmesini sağlarken, metin alanları çok satırlı ve çok daha uzun verilerin
+    girilmesini sağlar. Örneğin; şikayet, yorum, öneri veya ileti gibi verileri metin alanları ile alabilirsiniz.
+
+    ** metin alanı oluşturmak için <textarea> tagı kullanılır.
+
+        <textarea name="ileti" rows="5" cols="50"></textarea>
+
+    ** yukarıdaki ifade ile metin alanının adını ileti olarak belirlemiş oldunuz. Daha sonra kullanılan rows özelliği ile 
+    metin alanının 5 satır yüksekliğinde ve cols özelliği ile de 50 karakter genişliğinde olmasını sağladınız.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="email" action="mail.php" method="get">
+        Ad:<input type="text" name="ad"><br>
+        Soyad:<input type="text" name="soyad"><br>
+        Email:<input type="email" name="email"><br>
+        Web:<input type="url" name="web"><br>
+        İleti:<textarea name="ileti" rows="5" cols="50"></textarea>
+    </form>
+</body>
+
+</html>
